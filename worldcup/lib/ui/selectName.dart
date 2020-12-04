@@ -24,7 +24,7 @@ class _SelectNameState extends State<SelectName>
     super.initState();
 
     _aniC = new AnimationController(
-      duration: new Duration(milliseconds: 500),
+      duration: new Duration(milliseconds: 333),
       vsync: this,
     );
     _ani = new CurvedAnimation(parent: _aniC, curve: Curves.elasticOut);
@@ -76,7 +76,7 @@ class _SelectNameState extends State<SelectName>
       );
     } else {
       return new Material(
-        color: Colors.red,
+        color: Colors.purple[400],
         child: new Transform.scale(
           scale: _aniC.value * 1.5,
           child: new Column(
@@ -87,7 +87,7 @@ class _SelectNameState extends State<SelectName>
                 style: new TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
-                  fontSize: 50.0,
+                  fontSize: 30.0,
                 ),
               ),
               new Text(
@@ -95,7 +95,7 @@ class _SelectNameState extends State<SelectName>
                 style: new TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
-                  fontSize: 50.0,
+                  fontSize: 30.0,
                 ),
               ),
               new IconButton(

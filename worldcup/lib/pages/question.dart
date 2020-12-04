@@ -11,12 +11,13 @@ class QuestionPage extends StatefulWidget {
 
 class _QuestionPageState extends State<QuestionPage> {
   ItemList _itemList = new ItemList();
-
+  ULink _uLink = new ULink();
   Item _selectName;
 
   Item _name1;
   Item _name2;
-
+  String url1;
+  String url2;
   bool _where;
 
   bool overlayShouldBevisible = false;
@@ -25,6 +26,8 @@ class _QuestionPageState extends State<QuestionPage> {
     super.initState();
     _name1 = _itemList.nextItem;
     _name2 = _itemList.nextItem;
+    url1 = _uLink.nextUrl;
+    url2 = _uLink.nextUrl;
   }
 
   void handleSelect(Item name, bool where) {
@@ -39,11 +42,28 @@ class _QuestionPageState extends State<QuestionPage> {
   Widget build(BuildContext context) {
     return new Stack(
       fit: StackFit.expand,
-      children: <Widget>[
+      children: [
         new Column(
-          children: <Widget>[
+          children: [
             new SelectButton(true, _name1, () => handleSelect(_name1, true)),
             new SelectButton(false, _name2, () => handleSelect(_name2, false)),
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  child: FlatButton(
+                    color: Colors.purple,
+                    onPressed: () {
+                      print(url1);
+                      print(url2);
+                    },
+                    child:
+                        Text("qwqwqw", style: TextStyle(color: Colors.white)),
+                  ),
+                ),
+              ],
+            )
           ],
         ),
         overlayShouldBevisible == true
