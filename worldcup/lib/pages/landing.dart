@@ -5,7 +5,7 @@ class LandingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Material(
-      color: Colors.pink,
+      color: Colors.purple,
       child: new InkWell(
         onTap: () => Navigator.of(context).push(new MaterialPageRoute(
             builder: (BuildContext context) => new QuestionPage())),
@@ -13,14 +13,16 @@ class LandingPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             new Text(
-              "이상형 월드컵",
+              "BTS Music WorldCup",
               style: new TextStyle(
-                  color: Colors.white,
-                  fontSize: 50.0,
-                  fontWeight: FontWeight.bold),
+                color: Colors.white,
+                fontSize: 30.0,
+                fontWeight: FontWeight.bold,
+                // textAlign: TextAlign.center,
+              ),
             ),
             new Text(
-              "시작",
+              "Start",
               style: new TextStyle(
                 color: Colors.white,
                 fontSize: 20.0,

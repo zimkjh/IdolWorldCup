@@ -12,7 +12,7 @@ class SelectButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Expanded(
       child: new Material(
-        color: _where == true ? Colors.lime : Colors.orange,
+        color: _where == true ? Colors.purple[100] : Colors.purple[300],
         child: new InkWell(
           onTap: () => _onTap(),
           child: new Center(
@@ -25,7 +25,7 @@ class SelectButton extends StatelessWidget {
                 _name.name,
                 style: new TextStyle(
                     color: Colors.white,
-                    fontSize: 40.0,
+                    fontSize: 30.0,
                     fontWeight: FontWeight.bold,
                     fontStyle: FontStyle.italic),
               ),
