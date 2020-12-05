@@ -24,7 +24,7 @@ class _SelectNameState extends State<SelectName>
     super.initState();
 
     _aniC = new AnimationController(
-      duration: new Duration(milliseconds: 333),
+      duration: new Duration(milliseconds: 10),
       vsync: this,
     );
     _ani = new CurvedAnimation(parent: _aniC, curve: Curves.elasticOut);
