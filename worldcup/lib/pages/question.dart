@@ -11,6 +11,7 @@ class QuestionPage extends StatefulWidget {
 
 class _QuestionPageState extends State<QuestionPage> {
   ItemList _itemList = new ItemList();
+  List<Item> winningItemList = new List();
   ULink _uLink = new ULink();
   Item _selectName;
 
