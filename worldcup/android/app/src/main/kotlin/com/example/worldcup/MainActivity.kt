@@ -1,4 +1,4 @@
-package com.example.worldcup
+package com.doubleM.worldcup
 
 import io.flutter.embedding.android.FlutterActivity
 
