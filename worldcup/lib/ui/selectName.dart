@@ -83,7 +83,7 @@ class _SelectNameState extends State<SelectName>
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               new Text(
-                "우승",
+                "Win",
                 style: new TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
