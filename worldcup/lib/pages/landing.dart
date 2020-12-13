@@ -16,7 +16,7 @@ class LandingPage extends StatelessWidget {
     );
 
     BannerAd myBanner = BannerAd(
-      adUnitId: BannerAd.testAdUnitId,
+      adUnitId: AdManager.bannerAdUnitId,
       size: AdSize.smartBanner,
       targetingInfo: targetingInfo,
       listener: (MobileAdEvent event) {
